@@ -1,0 +1,36 @@
+{
+  "name": "school-and-coaching",
+  "version": "1.0.0",
+  "description": "Privacy preserving distributed sequential learning.",
+  "main": "app.cjs",
+  "scripts": {
+    "test": "nodemon",
+    "start": "node app.cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chinmaykh/School-and-Coaching.git"
+  },
+  "keywords": [
+    "Hrishikesh K. Haritas",
+    "Chinmay K. Haritas",
+    "Machine Learning"
+  ],
+  "author": "Chinmay K Haritas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chinmaykh/School-and-Coaching/issues"
+  },
+  "homepage": "https://github.com/chinmaykh/School-and-Coaching#readme",
+  "type": "module",
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.3.0",
+    "csv-parse": "^5.3.6",
+    "dotenv": "^16.0.3",
+    "express": "4.18.2",
+    "googleapis": "^104.0.0",
+    "lowdb": "1.0.0",
+    "multer": "^1.4.5-lts.1",
+    "web-push": "3.5.0"
+  }
+}

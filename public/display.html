@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Model Viewer</title>
+
+    <!-- MaterializeCSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  </head>
+  <body>
+    <div class="container">
+        <div class="section">
+            <h1>Sleep Apnea - Current Model</h1>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+            <h3>Model Weights</h3>
+            <div id="weights"></div>
+    </div>
+    <!-- Import tensorflow -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis"></script>
+    <script src="working.js"></script>
+    <script>
+        // const surface = document.getElementById('weights');
+
+        async function displayModel() {
+            const model = await tf.loadLayersModel('/model.json');
+            console.log(model.getWeights());    
+
+            const surface = document.getElementById('weights');
+            //tfvis.show.modelSummary(surface, model);
+            tfvis.show.layer(surface, model.getLayer(undefined, 0));
+
+        }
+
+        displayModel();
+    </script>
+    <button class="btn-l" onclick= "initModel(this.id)"> Reset Model</button>
+  </body>
+</html>

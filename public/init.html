@@ -1,0 +1,39 @@
+<!--create an html file to show get model with css and a button which upon clicked calls the function initmodel() from working.js-->
+<html>
+<head>
+<title>Get Model</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<!-- Import Vue -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+<script src="https://gmousse.github.io/dataframe-js/dist/dataframe.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+<script src="working.js"></script>
+<script src="kesh.js"></script>
+<script src="https://accounts.google.com/gsi/client" onload="config_google();"></script>
+</head>
+<body>
+<!---take in the weights of the lstm model-->
+<div class="container">
+<center><h1>Get Model</h1></center>
+<div class="divider"></div>
+<div class="section">
+<div class="row">
+<div class="col s12">
+</div>
+<h3>Initial weights of the model</h3>
+<pre id="weights"></pre>
+<script>
+    let lstmodel=initmodel();
+   // const lstmModel = await tf.loadLayersModel('');
+    //const weights = lstmModel.layers[0].getWeights();
+    document.getElementById('weights').textContent = JSON.stringify(weights, null, 2);
+  </script>
+<center><button onclick="initmodel()">Initialize model</button></center>
+</body>
+</html>
+

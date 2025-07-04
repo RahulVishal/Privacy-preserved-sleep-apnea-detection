@@ -1,0 +1,439 @@
+{
+  "bucket": [
+    {
+      "startTimeMillis": "1680695249957",
+      "endTimeMillis": "1680698849957",
+      "dataset": [
+        {
+          "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+          "point": [
+            {
+              "startTimeNanos": "1680695666197000000",
+              "endTimeNanos": "1680698054194000000",
+              "dataTypeName": "com.google.step_count.delta",
+              "originDataSourceId": "raw:com.google.step_count.cumulative:OnePlus:EB2101:742e50d3:pedometer  Non-wakeup",
+              "value": [
+                {
+                  "intVal": 72,
+                  "mapVal": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "startTimeMillis": "1680698849957",
+      "endTimeMillis": "1680702449957",
+      "dataset": [
+        {
+          "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+          "point": [
+            {
+              "startTimeNanos": "1680698975738000000",
+              "endTimeNanos": "1680702326143000000",
+              "dataTypeName": "com.google.step_count.delta",
+              "originDataSourceId": "raw:com.google.step_count.cumulative:Fossil:Falster 3:1925760b:Pedometer  Non-wakeup",
+              "value": [
+                {
+                  "intVal": 173,
+                  "mapVal": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "startTimeMillis": "1680702449957",
+      "endTimeMillis": "1680706049957",
+      "dataset": [
+        {
+          "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+          "point": [
+            {
+              "startTimeNanos": "1680702989144000000",
+              "endTimeNanos": "1680705926102000000",
+              "dataTypeName": "com.google.step_count.delta",
+              "originDataSourceId": "raw:com.google.step_count.cumulative:Fossil:Falster 3:1925760b:Pedometer  Non-wakeup",
+              "value": [
+                {
+                  "intVal": 58,
+                  "mapVal": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "startTimeMillis": "1680706049957",
+      "endTimeMillis": "1680709649957",
+      "dataset": [
+        {
+          "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+          "point": [
+            {
+              "startTimeNanos": "1680706106225002048",
+              "endTimeNanos": "1680709649957000000",
+              "dataTypeName": "com.google.step_count.delta",
+              "originDataSourceId": "raw:com.google.step_count.cumulative:Fossil:Falster 3:1925760b:Pedometer  Non-wakeup",
+              "value": [
+                {
+                  "intVal": 1137,
+                  "mapVal": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "startTimeMillis": "1680709649957",
+      "endTimeMillis": "1680713249957",
+      "dataset": [
+        {
+          "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+          "point": [
+            {
+              "startTimeNanos": "1680709649957000000",
+              "endTimeNanos": "1680713249957000000",
+              "dataTypeName": "com.google.step_count.delta",
+              "originDataSourceId": "raw:com.google.step_count.cumulative:OnePlus:EB2101:742e50d3:pedometer  Non-wakeup",
+              "value": [
+                {
+                  "intVal": 160,
+                  "mapVal": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "startTimeMillis": "1680713249957",
+      "endTimeMillis": "1680716849957",
+      "dataset": [
+        {
+          "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+          "point": [
+            {
+              "startTimeNanos": "1680713249957000000",
+              "endTimeNanos": "1680716443004000000",
+              "dataTypeName": "com.google.step_count.delta",
+              "originDataSourceId": "raw:com.google.step_count.cumulative:Fossil:Falster 3:1925760b:Pedometer  Non-wakeup",
+              "value": [
+                {
+                  "intVal": 73,
+                  "mapVal": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "startTimeMillis": "1680716849957",
+      "endTimeMillis": "1680720449957",
+      "dataset": [
+        {
+          "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+          "point": [
+            {
+              "startTimeNanos": "1680719065980000000",
+              "endTimeNanos": "1680719125980000000",
+              "dataTypeName": "com.google.step_count.delta",
+              "originDataSourceId": "raw:com.google.step_count.cumulative:Fossil:Falster 3:1925760b:Pedometer  Non-wakeup",
+              "value": [
+                {
+                  "intVal": 12,
+                  "mapVal": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "startTimeMillis": "1680720449957",
+      "endTimeMillis": "1680724049957",
+      "dataset": [
+        {
+          "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+          "point": [
+            {
+              "startTimeNanos": "1680720732987000000",
+              "endTimeNanos": "1680723925935000000",
+              "dataTypeName": "com.google.step_count.delta",
+              "originDataSourceId": "raw:com.google.step_count.cumulative:Fossil:Falster 3:1925760b:Pedometer  Non-wakeup",
+              "value": [
+                {
+                  "intVal": 191,
+                  "mapVal": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "startTimeMillis": "1680724049957",
+      "endTimeMillis": "1680727649957",
+      "dataset": [
+        {
+          "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+          "point": [
+            {
+              "startTimeNanos": "1680724200946000000",
+              "endTimeNanos": "1680725116943000000",
+              "dataTypeName": "com.google.step_count.delta",
+              "originDataSourceId": "raw:com.google.step_count.cumulative:Fossil:Falster 3:1925760b:Pedometer  Non-wakeup",
+              "value": [
+                {
+                  "intVal": 112,
+                  "mapVal": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "startTimeMillis": "1680727649957",
+      "endTimeMillis": "1680731249957",
+      "dataset": [
+        {
+          "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+          "point": [
+            {
+              "startTimeNanos": "1680728473184425728",
+              "endTimeNanos": "1680729299942266595",
+              "dataTypeName": "com.google.step_count.delta",
+              "originDataSourceId": "raw:com.google.step_count.cumulative:OnePlus:EB2101:742e50d3:pedometer  Non-wakeup",
+              "value": [
+                {
+                  "intVal": 37,
+                  "mapVal": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "startTimeMillis": "1680731249957",
+      "endTimeMillis": "1680734849957",
+      "dataset": [
+        {
+          "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+          "point": []
+        }
+      ]
+    },
+    {
+      "startTimeMillis": "1680734849957",
+      "endTimeMillis": "1680738449957",
+      "dataset": [
+        {
+          "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+          "point": []
+        }
+      ]
+    },
+    {
+      "startTimeMillis": "1680738449957",
+      "endTimeMillis": "1680742049957",
+      "dataset": [
+        {
+          "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+          "point": []
+        }
+      ]
+    },
+    {
+      "startTimeMillis": "1680742049957",
+      "endTimeMillis": "1680745649957",
+      "dataset": [
+        {
+          "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+          "point": []
+        }
+      ]
+    },
+    {
+      "startTimeMillis": "1680745649957",
+      "endTimeMillis": "1680749249957",
+      "dataset": [
+        {
+          "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+          "point": []
+        }
+      ]
+    },
+    {
+      "startTimeMillis": "1680749249957",
+      "endTimeMillis": "1680752849957",
+      "dataset": [
+        {
+          "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+          "point": []
+        }
+      ]
+    },
+    {
+      "startTimeMillis": "1680752849957",
+      "endTimeMillis": "1680756449957",
+      "dataset": [
+        {
+          "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+          "point": []
+        }
+      ]
+    },
+    {
+      "startTimeMillis": "1680756449957",
+      "endTimeMillis": "1680760049957",
+      "dataset": [
+        {
+          "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+          "point": []
+        }
+      ]
+    },
+    {
+      "startTimeMillis": "1680760049957",
+      "endTimeMillis": "1680763649957",
+      "dataset": [
+        {
+          "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+          "point": [
+            {
+              "startTimeNanos": "1680762176933694885",
+              "endTimeNanos": "1680762564038518470",
+              "dataTypeName": "com.google.step_count.delta",
+              "originDataSourceId": "raw:com.google.step_count.cumulative:OnePlus:EB2101:742e50d3:pedometer  Non-wakeup",
+              "value": [
+                {
+                  "intVal": 57,
+                  "mapVal": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "startTimeMillis": "1680763649957",
+      "endTimeMillis": "1680767249957",
+      "dataset": [
+        {
+          "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+          "point": [
+            {
+              "startTimeNanos": "1680767176595431204",
+              "endTimeNanos": "1680767249957000000",
+              "dataTypeName": "com.google.step_count.delta",
+              "originDataSourceId": "raw:com.google.step_count.cumulative:OnePlus:EB2101:742e50d3:pedometer  Non-wakeup",
+              "value": [
+                {
+                  "intVal": 37,
+                  "mapVal": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "startTimeMillis": "1680767249957",
+      "endTimeMillis": "1680770849957",
+      "dataset": [
+        {
+          "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+          "point": [
+            {
+              "startTimeNanos": "1680767249957000000",
+              "endTimeNanos": "1680769729356000000",
+              "dataTypeName": "com.google.step_count.delta",
+              "originDataSourceId": "raw:com.google.step_count.cumulative:OnePlus:EB2101:742e50d3:pedometer  Non-wakeup",
+              "value": [
+                {
+                  "intVal": 644,
+                  "mapVal": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "startTimeMillis": "1680770849957",
+      "endTimeMillis": "1680774449957",
+      "dataset": [
+        {
+          "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+          "point": [
+            {
+              "startTimeNanos": "1680771698647137958",
+              "endTimeNanos": "1680774147960037459",
+              "dataTypeName": "com.google.step_count.delta",
+              "originDataSourceId": "raw:com.google.step_count.cumulative:Fossil:Falster 3:1925760b:Pedometer  Non-wakeup",
+              "value": [
+                {
+                  "intVal": 24,
+                  "mapVal": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "startTimeMillis": "1680774449957",
+      "endTimeMillis": "1680778049957",
+      "dataset": [
+        {
+          "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+          "point": [
+            {
+              "startTimeNanos": "1680774785443223436",
+              "endTimeNanos": "1680775649252233616",
+              "dataTypeName": "com.google.step_count.delta",
+              "originDataSourceId": "raw:com.google.step_count.cumulative:Fossil:Falster 3:1925760b:Pedometer  Non-wakeup",
+              "value": [
+                {
+                  "intVal": 24,
+                  "mapVal": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "startTimeMillis": "1680778049957",
+      "endTimeMillis": "1680781649957",
+      "dataset": [
+        {
+          "dataSourceId": "derived:com.google.step_count.delta:com.google.android.gms:aggregated",
+          "point": []
+        }
+      ]
+    }
+  ]
+}

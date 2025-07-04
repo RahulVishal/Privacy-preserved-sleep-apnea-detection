@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slept well kid?</title>
+
+  <!-- Import materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!-- Import Vue -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+  <script src="https://gmousse.github.io/dataframe-js/dist/dataframe.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="working.js"></script>
+  <script src="kesh.js"></script>
+
+
+</head>
+
+<body class="grey darken-4 white-text">
+  <div class="container" id="container">
+    <h1>Did you experience an episode of sleep apnea last night?</h1>
+    <div class="divider"></div>
+    <div class="section">
+      <div class="row">
+        <button class="btn-large col l5 teal darken-4 s12" @click="teach('control')">
+          <i class="material-icons left">child_care</i>
+          No known experience
+        </button>
+        <button class="btn-large col l5 push-l2 s12 red darken-4" @click="teach('apnea')">
+          Episodes of apnea felt
+          <i class="material-icons right">free_breakfast</i>
+        </button>
+      </div>
+    </div>
+    <div class="section">
+      <div class="card-panel grey darken-4 center" id="status" v-show="status.display"
+        :class="{'error': status.status}">
+        {{status.message}}
+      </div>
+    </div>
+  </div>
+
+  <style>
+    #status {
+      color: green;
+      outline: 1px green solid;
+      outline-offset: -5px;
+    }
+
+    .error {
+      color: red;
+      outline: 1px red solid;
+      outline-offset: -5px;
+    }
+  </style>
+  <script src="kesh.js"></script>
+
+  <!-- Import Dataframejs -->
+  <script src="https://gmousse.github.io/dataframe-js/dist/dataframe.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="kesh.js"></script>
+  <script src="working.js"></script>
+  <script src="https://accounts.google.com/gsi/client"></script>
+  <script>
+    var app = new Vue({
+      el: "#container",
+      data: {
+        message: "Hello Vue!",
+        id: Math.random().toString(36).substring(7),
+        status: {
+          display: false,
+          status: false,
+          message: "No data",
+        },
+      },
+      methods: {
+        teach: function (label) {
+          console.log(label);
+          this.tellem("Training...", true);
+          // Get data from server
+          fetch("/getdata?" + new URLSearchParams({ id: this.id }), {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          })
+            .then((res) => {
+              if (res.status == 200) {
+                return res.json();
+              } else {
+                this.tellem("Error getting data", false);
+              }
+            })
+            .then((data) => {
+              if (data.busy) {
+                this.tellem("Server busy", false);
+              } else {
+                this.train(label);
+              }
+            });
+        },
+        tellem: function (message, status) {
+          this.status.display = true;
+          this.status.message = message;
+          this.status.status = status;
+          setTimeout(() => {
+            this.status.display = false;
+          }, 2000);
+        },
+        train: async function (label) {  
+          // YOUR CODE HERE!!!
+          console.log("found");
+          //TODO: add get model part
+          config_google(label, train, this.id);
+        },
+      },
+    });
+  </script>
+</body>
+
+</html>

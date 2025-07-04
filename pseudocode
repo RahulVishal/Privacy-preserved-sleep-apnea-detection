@@ -1,0 +1,49 @@
+## SERVER SIDE
+# using libraries express and webpush
+
+# import libraries
+
+# create a db using a local json files
+# stores 1. current model 2. current trainees
+
+# initialize ML parameters
+# epoch_id and model acquired from db
+# current_iteration
+
+# initialize server
+
+# endpoint 1 - add-subscription
+# stores the web-push subscription of the trainee
+
+# endpoint 2 - remove-subscription
+# removes the web-push subscription of the trainee
+
+# endpoint 3 - train
+# starts the training process, calls epoch()
+
+# endpoint 4 - recieve model
+# recieves trained model from the trainee
+# runs epoch() if all trainees not exhausted
+
+# listen for clients (here, trainees)
+
+# function notify()
+# uses the web-push subscription to send a notification to the trainee
+# payload contains the current epoch_id and model
+
+# function epoch()
+# if first iteration, will create a fixed list of trainees in this epoch
+# notifies first trainee
+# if not first iteration, will notify the next trainee based on a counter variable
+
+## CLIENT SIDE
+# On a JS client (trainee)
+
+# Prompt user to allow notifications
+# If allowed, register service worker
+# If service worker registered, register push subscription by calling server's /add-subscription endpoint
+
+# On the service worker, add listener for push events
+# On receiving a push event, train the model received in the push data's payload.
+# training can be performed by any JS library (tfjs, sklearnjs, etc)
+# On training completion, send the trained model to the server's /recieve-model endpointx

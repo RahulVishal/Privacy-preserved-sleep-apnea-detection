@@ -73,7 +73,7 @@ Observe training logs on client side and aggregation metrics on server console.
 - Metrics computed: accuracy, precision, recall, F1-score, and optionally, AUC.
 - Evaluate privacy guarantees like differential privacy budgets or gradient clipping thresholds.
 
-##🔧 Customization
+## 🔧 Customization
 
 -Swap in new models by editing `models/model.py`.
 - Adapt preprocessing for different sensor inputs or sampling rates.
